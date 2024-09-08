@@ -1,93 +1,261 @@
 body {
-    font-family: "Noto Sans Display", sans-serif;
+    font-family: 'Noto Sans Display', sans-serif;
     background-color: #101010;
     color: white;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    padding: 1.25rem;
     background-color: #101010;
+    padding: 1.25rem;
 }
 
-nav ul {
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
     list-style: none;
     display: flex;
 }
 
-nav ul li {
+header nav ul li {
     margin: 0 5rem;
 }
 
-nav ul li a {
+header nav ul li a {
+    color: #ccc;
     text-decoration: none;
-    color: #fff;
-    font-size: 1rem;
+    font-size: 18px;
 }
 
-nav ul li a.active {
-    color: white;
+header nav ul li a.active,
+header nav ul li a:hover {
     font-weight: bold;
-}
-
-main {
-    display: flex;
-    justify-content: center;
-
-    align-items: center;
-    text-align: center;
-}
-
-main h1 {
-    height: 100%;
-    font-size: 4rem;
-    letter-spacing: 0.1em;
+    color: white;
 }
 
 .home {
-    height: 80vh;
     display: flex;
-
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 80vh; /* Full viewport height */
+    text-align: center; /* Center text */
 }
 
-.career-section {
-    margin-top: 20px;
+.home h1 {
+    font-size: 5rem; /* Adjust as needed */
+    line-height: 1.2; /* Adjust as needed */
 }
 
-.career-block {
-    margin-bottom: 40px;
+main {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 80px;
+}
+
+
+.block-header {
+    display: flex;
+    justify-content: flex-start; /* Beide Seiten an der linken Seite ausrichten */
+    align-items: flex-start; /* Inhalt am oberen Rand ausrichten */
+    margin-bottom: 10px; /* Abstand zwischen den Blöcken */
+    margin-top: 6px;
+    color: white; /* Weißer Text, wie in deinem Bild */
 }
 
 .career-date {
-    margin-bottom: 10px;
+    flex: 0 0 auto; /* Breite basierend auf dem Inhalt */
+    margin-right: 40px; /* Abstand zwischen dem Datum und dem Text rechts */
+    text-align: left;
+}
+
+.career-date h3 {
+    font-size: 22px; /* Größe des Monats */
+    font-weight: 300;
+    margin: 0;
 }
 
 .career-date h2 {
-    font-size: 24px;
+    font-size: 48px; /* Größe des Jahres */
+    font-weight: 700; 
+    margin: 0;
+}
+
+.header-right {
+    flex: 1; /* Nimmt den verbleibenden Platz ein */
+    margin-left: 1.5rem;
+    text-align: left;
+}
+
+.header-right h4 {
+    font-size: 18px; /* Überschrift für die Position */
+    margin: 0;
+    margin-bottom: 5px; /* Abstand unter der Überschrift */
+}
+
+.header-right p {
+    font-size: 14px; /* Schriftgröße für den Text */
+    margin: 0;
+    margin-bottom: 5px; /* Abstand zwischen den Absätzen */
+}
+
+.skills-acquired {
+    margin-top: 20px;
+    font-size: 14px;
     color: #aaa;
+    clear: both;
 }
 
-.career-details h4 {
-    font-size: 20px;
-    color: #fff;
+
+.career-details-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.career-details {
+    flex: 1 1 30%; /* Flex-grow, flex-shrink, and basis properties */
+    min-width: 195px; /* Minimum width for responsive design */
+    box-sizing: border-box;
+}
+
+.career-details:not(#three, #two){
+    flex: 1 1 70%; /* Flex-grow, flex-shrink, and basis properties */
+    min-width: 195px; /* Minimum width for responsive design */
+    box-sizing: border-box;
+}
+
+/* Optional styling for individual elements */
+.career-details h5 {
     margin-bottom: 10px;
-}
-
-.career-details p {
     font-size: 16px;
-    color: #ccc;
 }
 
 .career-details ul {
-    margin-top: 10px;
-    margin-bottom: 20px;
     padding-left: 20px;
 }
 
 .career-details ul li {
     margin-bottom: 5px;
-    list-style-type: square;
 }
 
-.career-details strong {
-    color: #ddd;
+.career-details p {
+    margin-top: 10px;
+}
+
+.career-block {
+    margin-top: 3rem;
+}
+
+
+
+
+
+
+
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.contact-text {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.contact-form a {
+    color: #0a66c2;
+    text-decoration: none;
+}
+
+.contact-form a:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background-color: #101010;
+    border: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #FFF;
+    border-bottom: 2px solid #FFF; /* Adds a bottom border (line) */
+    outline: none; /* Removes the outline when the input is focused */
+    background: transparent; /* Makes the background transparent */
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+button {
+    background-color: #101010;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button span {
+    margin-left: 10px;
+}
+
+
+
+.quote {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10rem;
+    margin-left: 20px;
+    color: #ffffff;
+    background-color: #101010;
+    border-radius: 8px;
+}
+
+.quote p {
+    margin: 0;
+    font-size: 20px;
+    font-family: "Rockwell Nova";
+    font-weight: 200;
+}
+
+.author {
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 16px;
+    color: #cccccc;
 }
