@@ -1,0 +1,93 @@
+body {
+    font-family: "Noto Sans Display", sans-serif;
+    background-color: #101010;
+    color: white;
+}
+
+header {
+    padding: 1.25rem;
+    background-color: #101010;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+nav ul li a.active {
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    text-align: center;
+}
+
+main h1 {
+    height: 100%;
+    font-size: 4rem;
+    letter-spacing: 0.1em;
+}
+
+.home {
+    height: 80vh;
+    display: flex;
+
+}
+
+.career-section {
+    margin-top: 20px;
+}
+
+.career-block {
+    margin-bottom: 40px;
+}
+
+.career-date {
+    margin-bottom: 10px;
+}
+
+.career-date h2 {
+    font-size: 24px;
+    color: #aaa;
+}
+
+.career-details h4 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.career-details p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.career-details ul {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.career-details ul li {
+    margin-bottom: 5px;
+    list-style-type: square;
+}
+
+.career-details strong {
+    color: #ddd;
+}
