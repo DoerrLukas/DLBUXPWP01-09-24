@@ -24,7 +24,7 @@ In diesem Projekt habe ich einen persönlichen Webauftritt erstellt, der meine b
 
 ## Projektstruktur
 
-Das Projekt besteht aus mehreren HTML-Seiten, die durch Links miteinander verbunden sind. Alternativ kann es sich auch um einen One-Pager mit verschiedenen Abschnitten handeln. Alle Dateien und Ressourcen sind in einer klaren Ordnerstruktur organisiert, um die Wartung und Erweiterung zu erleichtern.
+Das Projekt besteht aus mehreren HTML-Seiten, die durch Links miteinander verbunden sind. Alle Dateien und Ressourcen sind in einer klaren Ordnerstruktur organisiert, um die Wartung und Erweiterung zu erleichtern.
 
 ## Kontakt
 
