@@ -312,7 +312,7 @@ button span {
     min-width: 195px; /* Minimum width for responsive design */
     box-sizing: border-box;
     display: grid;
-    /* grid-template-columns: 200px auto; Adjust the first value for skill name width */
+    grid-template-columns: 200px auto;
     align-items: center;
 }
 
@@ -322,6 +322,14 @@ button span {
     font-weight: 300;
     
 }
+
+.certs {
+    min-width: 195px; /* Minimum width for responsive design */
+    box-sizing: border-box;
+    display: grid;
+    align-items: center;
+}
+
 
 .cert-block{
     width: 33%;
