@@ -27,7 +27,7 @@ header nav ul li {
 header nav ul li a {
     color: #ccc;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 header nav ul li a.active,
@@ -262,4 +262,64 @@ button span {
     font-style: italic;
     font-size: 16px;
     color: #cccccc;
+}
+
+
+
+.stars {
+    display: flex;
+    gap: 5px;
+}
+
+.skill-rating {
+    flex: 1 1 30%;
+    min-width: 195px; /* Minimum width for responsive design */
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 150px auto; /* Adjust the first value for skill name width */
+    align-items: center;
+}
+
+.skill-name{
+    margin-top: 5px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.block {
+    width: 42%;
+    margin-bottom: 20px;
+    color: white; 
+    border-radius: 10px; 
+}
+
+.block h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.block p {
+    line-height: 1.5em;
+}
+.strwea {
+    min-width: 195px; /* Minimum width for responsive design */
+    box-sizing: border-box;
+    display: grid;
+    /* grid-template-columns: 200px auto; Adjust the first value for skill name width */
+    align-items: center;
+}
+
+.cert{
+    margin-top: -5px;
+    font-size: 12px;
+    
+}
+
+.cert-block{
+    width: 33%;
+    margin-bottom: 20px;
 }
