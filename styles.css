@@ -30,10 +30,13 @@ header nav ul li a {
     font-size: 24px;
 }
 
-header nav ul li a.active,
-header nav ul li a:hover {
+header nav ul li a.active {
     font-weight: bold;
     color: white;
+}
+
+header nav ul li a:hover {
+    color: #7d7d7d;
 }
 
 .home {
@@ -363,16 +366,19 @@ button span {
 }
 
 .project-description p {
-    font-size: 24px;
+    font-size: 20px;
 }
 
-/* Reverse layout when the image is on the right */
-.project-item.reverse {
-    flex-direction: row-reverse;
+.project-descriptions {
+    flex-grow: 1;
+    padding-left: 20px;
+    flex: 1 1 48%;
+    font-size: 20px;
 }
+
 
 /* Special case: Two images without text */
-.project-item > .project-img:nth-child(1),
-.project-item > .project-img:nth-child(2) {
+/* .project-item > .project-description:nth-child(1),
+.project-item > .project-description:nth-child(2) {
     flex: 1 1 48%;
-}
+} */
