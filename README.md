@@ -31,5 +31,5 @@ Das Projekt besteht aus mehreren HTML-Seiten, die durch Links miteinander verbun
 Für Fragen oder Anregungen stehe ich gerne zur Verfügung:
 
 - **E-Mail**: [E-Mail](lukas.doerr@iu-study.org)
-- **LinkedIn**: [Dein LinkedIn-Profil](https://www.linkedin.com/in/lukas-d%C3%B6rr-a701b0209/)
+- **LinkedIn**: [Mein LinkedIn-Profil](https://www.linkedin.com/in/lukas-d%C3%B6rr-a701b0209/)
 ---
